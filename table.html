@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>таблица</title>
+	<style type="text/css">
+		body{
+			margin: 5px 15px;
+		}
+		table{
+			font-family: arial, sans-serif;
+    		border-collapse: collapse;
+    		width: 100%;
+		}
+		table caption {			
+			font-weight: 800;
+			margin: 5px;
+			float: left;
+		}
+
+		hr{
+			border: 1px solid  #dddddd;;
+		}
+		h2, h3 {
+			text-align: center;
+		}
+
+		th {
+			background-color: gray;
+		}
+				
+		.table-custom th, .table-custom td, .table-info td {
+		    border: 1px solid #dddddd;
+    		text-align: left;
+    		padding: 8px;
+
+		}
+
+		.table-info td{
+			border : none;
+		}
+
+		.logo-tinkoff{ 
+			text-align: center;
+			background-color: white;
+		
+		}
+
+		.logo-tinkoff img{
+				width: 100px;	
+		}
+
+		.this-info-create{
+			text-align: right;
+			font-size: 16px;
+		}
+
+		.this-info-create h4{
+			margin: 0px 0px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="logo-tinkoff">
+		<img  src="https://static2.tinkoff.ru/portal/tinkoffbank-general-logo/tinkoff-bank-general-logo-10.png">
+		<hr>
+	</div>
+	<script type="text/javascript">
+	function timer() {
+		var obj = document.getElementById('timer');
+		obj.innerHTML--;
+
+		if(obj.innerHTML==0){alert('Hello');
+			setTimeout(clearInterval(this));
+		}else{
+			setTimeout(timer,1000);
+		}
+}
+
+	setTimeout(timer,1000);
+</script>
+	<div id="timer">10</div>
+	<h2>Заголовок документа</h2>
+	<table class="table-mother">
+		<!-- ----------------------------------- Информация --------------------------------------- -->
+		<tr>
+				<tr>
+					<td width="40%">
+						<table class="table-info">
+							<caption>Информация</caption>
+							<tr>
+								<td>строка 1</td>
+								<td>Значение 1</td>
+							</tr>
+							<tr>
+								<td>строка 2</td>
+								<td>Значение 2</td>
+							</tr>
+							<tr>
+								<td>строка 3</td>
+								<td>Значение 3</td>
+							</tr>
+							<tr>
+								<td>строка 4</td>
+								<td>Значение 4</td>
+							</tr>
+							<tr>
+								<td>строка 5</td>
+								<td>Значение 6</td>
+							</tr>
+						</table>	
+					</td>
+					<td class="this-info-create" width="60%" valign="top">
+						<h4>Документ создан:</h4>
+						<p>22.22.1990</p>
+					</td>
+
+				</tr>	
+		</tr>
+		<!-- -------------------------------------SR Компании--------------------------------------- -->
+		<tr>
+			<td colspan="2">
+				<hr>
+				<h3>SR - компании</h3>
+				<table class="table-custom">
+					<caption>Тип - тема - подтема</caption>
+					<th>Столбец 1</th>
+					<th>Столбец 2</th>
+					<th>Столбец 3</th>
+					<th>Столбец 4</th>
+					<th>Столбец 5</th>
+					<tr>
+						<td>значение 1</td>
+						<td>значение 2</td>
+						<td>значение 3</td>
+						<td>значение 3</td>
+						<td>значение 4</td>
+					</tr>
+					<tr>
+						<td>значение 1</td>
+						<td>значение 2</td>
+						<td>значение 3</td>
+						<td>значение 3</td>
+						<td>значение 4</td>
+					</tr>
+					<tr>
+						<td>значение 1</td>
+						<td>значение 2</td>
+						<td>значение 3</td>
+						<td>значение 3</td>
+						<td>значение 4</td>
+					</tr>
+					<tr>
+						<td>значение 1</td>
+						<td>значение 2</td>
+						<td>значение 3</td>
+						<td>значение 3</td>
+						<td>значение 4</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!-- -------------------------------------SR Контакты--------------------------------------- -->
+		<tr>
+			<td colspan="2">
+				<hr>
+				<h3>SR контакты</h3>
+				<table class="table-custom">
+					<caption>Тип - Тема - Подтема</caption>
+					<th>Столбец 1</th>
+					<th>Столбец 2</th>
+					<th>Столбец 3</th>
+					<th>Столбец 4</th>
+					<th>Столбец 5</th>
+					<tr>
+						<td>значение 1</td>
+						<td>значение 2</td>
+						<td>значение 3</td>
+						<td>значение 3</td>
+						<td>значение 4</td>
+					</tr>
+					<tr>
+						<td>значение 1</td>
+						<td>значение 2</td>
+						<td>значение 3</td>
+						<td>значение 3</td>
+						<td>значение 4</td>
+					</tr>
+					<tr>
+						<td>значение 1</td>
+						<td>значение 2</td>
+						<td>значение 3</td>
+						<td>значение 3</td>
+						<td>значение 4</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+
+</html>
